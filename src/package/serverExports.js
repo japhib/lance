@@ -12,6 +12,7 @@ import DynamicObject from '../serialize/DynamicObject.js';
 import PhysicalObject2D from '../serialize/PhysicalObject2D.js';
 import PhysicalObject3D from '../serialize/PhysicalObject3D.js';
 import ServerEngine from '../ServerEngine.js';
+import KeyboardControls from '../controls/KeyboardControls.js';
 import Lib from '../lib/lib.js';
 
 export {
@@ -30,4 +31,5 @@ export {
   PhysicalObject3D,
   ServerEngine,
   Lib,
+  KeyboardControls,
 };
