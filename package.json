@@ -5,6 +5,7 @@
   "main": "src/package/serverExports.js",
   "browser": "src/package/clientExports.js",
   "types": "dist/lance-gg.d.ts",
+  "type": "module",
   "scripts": {
     "docs": "jsdoc -c jsdoc.conf.json",
     "build": "rollup --config rollup.config.js",
