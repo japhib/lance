@@ -1,5 +1,4 @@
 import EventEmitter from 'event-emitter';
-import http from 'http';
 
 /**
  * Measures network performance between the client and the server
@@ -60,9 +59,6 @@ export default class NetworkMonitor {
     // server
     registerPlayerOnServer(socket) {
         socket.on('RTTQuery', this.respondToRTTQuery.bind(this, socket));
-        if (this.server && this.server.options.countConnections) {
-            http.get(`http://ping.games-eu.lance.gg:2000/${this.gameName}`).on('error', () => {});
-        }
     }
 
     respondToRTTQuery(socket, queryId) {
