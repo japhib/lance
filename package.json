@@ -2,8 +2,8 @@
   "name": "lance-gg",
   "version": "4.1.0",
   "description": "A Node.js based real-time multiplayer game server",
-  "main": "dist/server/lance-gg.js",
-  "browser": "dist/client/lance-gg.js",
+  "main": "src/package/serverExports.js",
+  "browser": "src/package/clientExports.js",
   "types": "dist/lance-gg.d.ts",
   "scripts": {
     "docs": "jsdoc -c jsdoc.conf.json",
